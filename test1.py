@@ -64,10 +64,11 @@
 
 ####### TRY EXCEPT ELSE FINALLY (REMOVE THE COMMAND TO RUN THIS BLOCK PROGRAM)
 
-for i in range(5) :
-    try:
-        print(i / 1)
-    except ZeroDivisionError as e:
-        print(e, "--> Division by 0 is not allowed, sorryy!")
-    finally:
-        print("I don't care, I'm getting print either way")
+# for i in range(5) :
+#     try:
+#         print(i / 1)
+#     except ZeroDivisionError as e:
+#         print(e, "--> Division by 0 is not allowed, sorryy!")
+#     finally:
+#         print("I don't care, I'm getting print either way")
+

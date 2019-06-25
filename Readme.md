@@ -16,3 +16,6 @@ Learn Python:
 5. Conditionals 
 6. Loops
 7. Exceptions
+8. Basic Function
+9. Moduls
+10.
