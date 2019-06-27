@@ -1,5 +1,5 @@
 
-####### BASIC FUNCTION (REMOVE THE COMMAND TO RUN THIS BLOCK PROGRAM)
+####### BASIC FUNCTION (REMOVE THE COMENT TO RUN THIS BLOCK PROGRAM)
 
 # def my_first_function():
 #     " This is ourt first function! "        #This is the docstring its role to describe purpose function (*optional)
@@ -22,7 +22,7 @@
 
 
 
-####### FUNCTION - NAMESPACE (REMOVE THE COMMAND TO RUN THIS BLOCK PROGRAM)
+####### FUNCTION - NAMESPACE (REMOVE THE COMENT TO RUN THIS BLOCK PROGRAM)
 # my_var = 5
 # def my_third_function():
 #     #global my_var          # this is will be set my_var = 5 to global variabel on this function before assigment
@@ -32,7 +32,7 @@
 # my_third_function()
 
 
-####### MODULES IMPORTING (REMOVE THE COMMAND TO RUN THIS BLOCK PROGRAM)
+####### MODULES IMPORTING (REMOVE THE COMENT TO RUN THIS BLOCK PROGRAM)
 # import my_module               #import the module, you can use "from" for import module
 #
 # print("This is my app!")
@@ -43,3 +43,7 @@
 
 
 ####### HELPFUL FUNCTIONS dir() and help()
+
+
+
+

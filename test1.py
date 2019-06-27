@@ -1,5 +1,5 @@
 # Conditionals
-#######IF ELIF ELSE (REMOVE THE COMMAND TO RUN THIS BLOCK PROGRAM)
+#######IF ELIF ELSE (REMOVE THE COMENT TO RUN THIS BLOCK PROGRAM)
 
 # x = 10
 # y = 4                                                            # you can change variabel on if
@@ -13,7 +13,7 @@
 #     print("x is not greater than 5")
 
 
-####### FOR-ELSE (REMOVE THE COMMAND TO RUN THIS BLOCK PROGRAM)
+####### FOR-ELSE (REMOVE THE COMENT TO RUN THIS BLOCK PROGRAM)
 
 # vendors = ["Cisco","HP", "Nortel", "Avaya", "Juniper"]
 # for each_vendor in vendors:                                        #this statement will be print every index on vendors
@@ -25,7 +25,7 @@
 #     print("\nThe end of the list has been reached")                  #else will be run if the for has been finish
 
 
-####### LOOPS - WHILE-ELSE (REMOVE THE COMMAND TO RUN THIS BLOCK PROGRAM)
+####### LOOPS - WHILE-ELSE (REMOVE THE COMENT TO RUN THIS BLOCK PROGRAM)
 # x = 1
 # y=100                                                               # you can change variabel on if
 # while y <= 10 :
@@ -35,7 +35,7 @@
 #     print (y)
 
 
-####### NESTING - IF FOR WHILE (REMOVE THE COMMAND TO RUN THIS BLOCK PROGRAM)
+####### NESTING - IF FOR WHILE (REMOVE THE COMENT TO RUN THIS BLOCK PROGRAM)
 
 # x = "Cisco"
 #
@@ -53,7 +53,7 @@
 
 
 
-####### BREAK - CONTINUE - PASS (REMOVE THE COMMAND TO RUN THIS BLOCK PROGRAM)
+####### BREAK - CONTINUE - PASS (REMOVE THE COMENT TO RUN THIS BLOCK PROGRAM)
 #
 # for number in range(10):
 #     if number == 7 :
@@ -62,7 +62,7 @@
 
 
 
-####### TRY EXCEPT ELSE FINALLY (REMOVE THE COMMAND TO RUN THIS BLOCK PROGRAM)
+####### TRY EXCEPT ELSE FINALLY (REMOVE THE COMENT TO RUN THIS BLOCK PROGRAM)
 
 # for i in range(5) :
 #     try:
