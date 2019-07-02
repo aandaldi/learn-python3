@@ -18,4 +18,12 @@ Learn Python:
 7. Exceptions
 8. Basic Function
 9. Moduls
-10.
+10. File Operation
+11. Regular Expression
+12. Class and Object
+13. List, Set, Dictionary, Comprehensions
+14. Lambda Function
+15. Map and Filter Function
+16. Iterators and Generators
+17. Decorators
+18. Threading Basics
