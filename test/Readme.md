@@ -27,3 +27,9 @@ Learn Python:
 16. Iterators and Generators
 17. Decorators
 18. Threading Basics
+19. Calculator Example Project
+20. Automate Excel Task
+21. Database Software (PostgreSQL)
+    - Create Database Using python
+    - 
+
