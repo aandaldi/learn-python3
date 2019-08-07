@@ -30,6 +30,6 @@ Learn Python:
 19. Calculator Example Project
 20. Automate Excel Task
 21. Database Software (PostgreSQL)
-    - Create Database Using python
-    - 
+22. Networking Setup
+
 
