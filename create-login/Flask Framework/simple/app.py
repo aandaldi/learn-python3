@@ -4,6 +4,7 @@ from flask_jwt_extended import JWTManager
 
 
 from resources import user
+from models.revokedToken import RevokedTokenModel
 
 
 app = Flask(__name__)
@@ -11,12 +12,13 @@ api = Api(app)
 jwt = JWTManager(app)
 
 
-
 # Setting DB
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://local:local@localhost/user_login'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'some-secret-string'
 app.config['JWT_SECRET_KEY'] = 'jwt-secret-string'
+app.config['JWT_BLACKLIST_ENABLED'] = True
+app.config['JWT_BLACKLIST_TOKEN_CHECKS'] = ['access', 'refresh']
 
 @app.before_first_request
 def create_tables():
@@ -26,6 +28,12 @@ def create_tables():
 def index():
     """pass"""
     return jsonify({'message':'Hello World'})
+
+# for cek delete token is true
+@jwt.token_in_blacklist_loader
+def check_if_token_in_blacklist(decrypted_token):
+    jti = decrypted_token['jti']
+    return RevokedTokenModel.is_jti_blacklisted(jti)
 
 
 api.add_resource(user.UserRegistration, '/registration')

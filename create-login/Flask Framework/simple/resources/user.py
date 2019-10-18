@@ -1,7 +1,9 @@
 from flask_restful import Resource, reqparse
 from flask import jsonify
 from models.user import UserModel
-from flask_jwt_extended import (create_access_token)
+from models.revokedToken import RevokedTokenModel
+from flask_jwt_extended import (create_access_token, create_refresh_token, jwt_required, jwt_refresh_token_required,
+                                get_jwt_identity, get_raw_jwt)
 
 parser = reqparse.RequestParser()
 
@@ -22,8 +24,12 @@ class UserRegistration(Resource):
 
         try:
             new_user.save_to_db()
+            access_token = create_access_token(identity=data['username'])
+            refresh_token = create_refresh_token(identity=data['username'])
             return {
-                'message': 'User {} was created'.format(data['username'])
+                'message': 'User {} was created'.format(data['username']),
+                'access_token': access_token,
+                'refresh_token': refresh_token
             }
         except:
             return {'message': 'Something went wrong'}, 500
@@ -43,25 +49,48 @@ class UserLogin(Resource):
 
         if current_users:
             if UserModel.verify_hash(data['password'], current_users.password):
-                return jsonify({'message':'berhasil login'})
+                access_token = create_access_token(identity=data['username'])
+                refresh_token = create_refresh_token(identity=data['username'])
+                return jsonify({'message':'berhasil login',
+                    'access_token': access_token,
+                    'refresh_token': refresh_token})
             else:
                 return jsonify({'message':'password salah'})
 
         return jsonify({'message': 'akun tidak ditemukan'})
 
 class UserLogoutAccess(Resource):
+    @jwt_required
     def post(self):
-        return jsonify({'message': 'User Logout'})
+        jti = get_raw_jwt()['jti']
+        print("1")
+        try:
+            revoked_token = RevokedTokenModel(jti=jti)
+            revoked_token.add()
+            return {'message': 'Access token has been revoked'}
+        except:
+            print("2")
+            return {'message': 'Something went wrong'}, 500
 
 
 class UserLogoutRefresh(Resource):
+    @jwt_refresh_token_required
     def post(self):
-        return jsonify({'message': 'User Logout'})
+        jti = get_raw_jwt()['jti']
+        try:
+            revoked_token = RevokedTokenModel(jti=jti)
+            revoked_token.add()
+            return {'message': 'Refresh token has been revoked'}
+        except:
+            return {'message': 'Something went wrong'}, 500
 
 
 class TokenRefresh(Resource):
+    @jwt_refresh_token_required
     def post(self):
-        return jsonify({'message': 'Token Refresh'})
+        current_user=get_jwt_identity()
+        access_token = create_access_token(identity=current_user)
+        return jsonify({'access_token': access_token})
 
 
 class AllUser(Resource):
@@ -73,5 +102,6 @@ class AllUser(Resource):
 
 
 class SecretResources(Resource):
+    @jwt_required
     def get(self):
         return jsonify({'answer': 42})
