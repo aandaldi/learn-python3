@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8679d88-156e-4ed7-8267-5d382e78cbdb" name="Default Changelist" comment="Python with database postgreSQL">
-      <change afterPath="$PROJECT_DIR$/Learn-Redis/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create-login/Flask Framework/simple/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create-login/Flask Framework/simple/resources/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="c8679d88-156e-4ed7-8267-5d382e78cbdb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Learn-Redis/.idea/Learn-Redis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Learn-Redis/.idea/Learn-Redis.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Learn-Redis/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Learn-Redis/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Learn-Redis/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Learn-Redis/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Learn-Redis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Learn-Redis/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Learn-Redis/.vscode/lesson2/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Learn-Redis/.vscode/lesson2/Readme.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +24,7 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/create-login/Flask Framework/simple" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="ProjectId" id="1RuXSq5NPNFE7tCcOXe78EIYOpA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -272,7 +263,8 @@
     <MESSAGE value="File Operations and Regular expressions(test3.py)" />
     <MESSAGE value="calculator example project" />
     <MESSAGE value="Python with database postgreSQL" />
-    <option name="LAST_COMMIT_MESSAGE" value="Python with database postgreSQL" />
+    <MESSAGE value="create simple login with flask and jwt" />
+    <option name="LAST_COMMIT_MESSAGE" value="create simple login with flask and jwt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

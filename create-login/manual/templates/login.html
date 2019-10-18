@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+    		$("#submit-form").click(function(){
+                var username=$("#login_username").val();
+                var password=$("#login_password").val();
+                $.ajax({
+                    url: '/login',
+                    type: 'POST',
+                    data: JSON.stringify({"username":username, "password":password}),
+                    contentType:'application/json',
+                    success: function(response) {
+                    	console.log(response;
+                    	if (response.includes("success")) {
+                    		console.log(response.username);
+<!--                    		window.location.href ="home";-->
+						} else {
+                    		console.log("password salah");
+                    		window.location.href ="login";
+						}
+                    },
+                    error: function(error) {
+                    	console.log("eerror");
+	                    console.log(error);
+                    }
+                 });
+            });
+        });
+    </script>
+</head>
+<body>
+	<div class="kotak_login">
+		<p class="tulisan_login">Silahkan login</p>
+        <form name="form1" id="form1" method="post">
+            <label>Username</label>
+			<input type="text" name="username" id="login_username" class="form_login" value="{{request.form.password }}" placeholder="Username atau email ..">
+			<label>Password</label>
+			<input type="text" name="password" id="login_password" class="form_login" placeholder="Password ..">
+			<button type="submit" id="submit-form">Login</button>
+			<br/>
+			<br/>
+			<center>
+				<a class="" href="/register">Register</a>
+			</center>
+		</form>
+	</div>
+</body>
+</html>

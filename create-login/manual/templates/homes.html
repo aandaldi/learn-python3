@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('#logout').click(function(){
+                console.log("home");
+                $.ajax({
+                    url:'/logout',
+                    success:function(response){
+                        console.log("success");
+                        if(response=='logout'){
+                    		window.location.href ="login";
+                        } else {
+                            window.location.href ="home";
+                        }
+                    },
+                    error:function(){
+                        console.log("error");
+                    }
+                });
+            });
+        })
+    </script>
+</head>
+    HOME (AUTH Required)
+    <input type="submit" id="logout" value="LOGOUT"  />
+</html>
