@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8679d88-156e-4ed7-8267-5d382e78cbdb" name="Default Changelist" comment="">
+    <list default="true" id="c8679d88-156e-4ed7-8267-5d382e78cbdb" name="Default Changelist" comment="create simple login with flask and jwt">
+      <change afterPath="$PROJECT_DIR$/create-login/Flask Framework/simple/models/revokedToken.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create-login/Flask Framework/simple/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/create-login/Flask Framework/simple/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create-login/Flask Framework/simple/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/create-login/Flask Framework/simple/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create-login/Flask Framework/simple/resources/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/create-login/Flask Framework/simple/resources/user.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
